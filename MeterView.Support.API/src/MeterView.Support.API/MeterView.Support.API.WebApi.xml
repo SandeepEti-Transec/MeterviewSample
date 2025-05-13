@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeterView.Support.API</name>
+    </assembly>
+    <members>
+        <member name="M:MeterView.Support.API.Controllers.v1.FeedBacksController.AddFeedBack(MeterView.Support.API.Domain.FeedBacks.Dtos.FeedBackForCreationDto)">
+            <summary>
+            Creates a new FeedBack record.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Controllers.v1.FeedBacksController.GetFeedBack(System.Guid)">
+            <summary>
+            Gets a single FeedBack by ID.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Controllers.v1.FeedBacksController.GetFeedBacks(MeterView.Support.API.Domain.FeedBacks.Dtos.FeedBackParametersDto)">
+            <summary>
+            Gets a list of all FeedBacks.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Controllers.v1.FeedBacksController.UpdateFeedBack(System.Guid,MeterView.Support.API.Domain.FeedBacks.Dtos.FeedBackForUpdateDto)">
+            <summary>
+            Updates an entire existing FeedBack.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Controllers.v1.FeedBacksController.DeleteFeedBack(System.Guid)">
+            <summary>
+            Deletes an existing FeedBack record.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Databases.EntityConfigurations.FeedBackConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{MeterView.Support.API.Domain.FeedBacks.FeedBack})">
+            <summary>
+            The database configuration for FeedBacks. 
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:MeterView.Support.API.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:MeterView.Support.API.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+    </members>
+</doc>

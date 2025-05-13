@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeterView.TrendLines.API</name>
+    </assembly>
+    <members>
+        <member name="M:MeterView.TrendLines.API.Controllers.v1.TrendLinesController.AddTrendLine(MeterView.TrendLines.API.Domain.TrendLines.Dtos.TrendLineForCreationDto)">
+            <summary>
+            Creates a new TrendLine record.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Controllers.v1.TrendLinesController.GetTrendLine(System.Guid)">
+            <summary>
+            Gets a single TrendLine by ID.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Controllers.v1.TrendLinesController.GetTrendLines(MeterView.TrendLines.API.Domain.TrendLines.Dtos.TrendLineParametersDto)">
+            <summary>
+            Gets a list of all TrendLines.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Controllers.v1.TrendLinesController.UpdateTrendLine(System.Guid,MeterView.TrendLines.API.Domain.TrendLines.Dtos.TrendLineForUpdateDto)">
+            <summary>
+            Updates an entire existing TrendLine.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Controllers.v1.TrendLinesController.DeleteTrendLine(System.Guid)">
+            <summary>
+            Deletes an existing TrendLine record.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Databases.EntityConfigurations.TrendLineConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{MeterView.TrendLines.API.Domain.TrendLines.TrendLine})">
+            <summary>
+            The database configuration for TrendLines. 
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:MeterView.TrendLines.API.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:MeterView.TrendLines.API.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,141 @@
+version: '3.7'
+
+services:
+  meterview.trendlines.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55064:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.trendlines.api
+    volumes:
+      - meterview.trendlines.api-data:/var/lib/postgresql/data
+  meterview.channels.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55059:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.channels.api
+    volumes:
+      - meterview.channels.api-data:/var/lib/postgresql/data
+  meterview.devicealert.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55054:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.devicealert.api
+    volumes:
+      - meterview.devicealert.api-data:/var/lib/postgresql/data
+  meterview.devices.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55049:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.devices.api
+    volumes:
+      - meterview.devices.api-data:/var/lib/postgresql/data
+  meterview.support.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55044:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.support.api
+    volumes:
+      - meterview.support.api-data:/var/lib/postgresql/data
+  meterview.alarms.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55039:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.alarms.api
+    volumes:
+      - meterview.alarms.api-data:/var/lib/postgresql/data
+  meterview.reporting.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55034:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.reporting.api
+    volumes:
+      - meterview.reporting.api-data:/var/lib/postgresql/data
+  meterview.notification.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55029:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.notification.api
+    volumes:
+      - meterview.notification.api-data:/var/lib/postgresql/data
+  meterview.identity.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55024:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.identity.api
+    volumes:
+      - meterview.identity.api-data:/var/lib/postgresql/data
+  meterview.screenrendering.api-db:
+    image: postgres
+    restart: always
+    ports:
+      - '55019:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_meterview.screenrendering.api
+    volumes:
+      - meterview.screenrendering.api-data:/var/lib/postgresql/data
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+#    port mappings: https://www.jaegertracing.io/docs/1.32/getting-started/
+    ports:
+      - "55076:5775/udp"
+      - "55075:6831/udp"
+      - "55077:6832/udp"
+      - "55078:5778"
+      - "55079:16686"
+      - "55080:14250"
+      - "55081:14268"
+      - "55082:14269"
+      - "55083:9411"
+
+        
+volumes:
+  # compose volumes marker - do not delete
+  meterview.trendlines.api-data:
+  meterview.channels.api-data:
+  meterview.devicealert.api-data:
+  meterview.devices.api-data:
+  meterview.support.api-data:
+  meterview.alarms.api-data:
+  meterview.reporting.api-data:
+  meterview.notification.api-data:
+  meterview.identity.api-data:
+  meterview.screenrendering.api-data:

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeterView.DeviceAlert.API</name>
+    </assembly>
+    <members>
+        <member name="M:MeterView.DeviceAlert.API.Controllers.v1.DeviceAlertsController.AddDeviceAlert(MeterView.DeviceAlert.API.Domain.DeviceAlerts.Dtos.DeviceAlertForCreationDto)">
+            <summary>
+            Creates a new DeviceAlert record.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Controllers.v1.DeviceAlertsController.GetDeviceAlert(System.Guid)">
+            <summary>
+            Gets a single DeviceAlert by ID.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Controllers.v1.DeviceAlertsController.GetDeviceAlerts(MeterView.DeviceAlert.API.Domain.DeviceAlerts.Dtos.DeviceAlertParametersDto)">
+            <summary>
+            Gets a list of all DeviceAlerts.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Controllers.v1.DeviceAlertsController.UpdateDeviceAlert(System.Guid,MeterView.DeviceAlert.API.Domain.DeviceAlerts.Dtos.DeviceAlertForUpdateDto)">
+            <summary>
+            Updates an entire existing DeviceAlert.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Controllers.v1.DeviceAlertsController.DeleteDeviceAlert(System.Guid)">
+            <summary>
+            Deletes an existing DeviceAlert record.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Databases.EntityConfigurations.DeviceAlertConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{MeterView.DeviceAlert.API.Domain.DeviceAlerts.DeviceAlert})">
+            <summary>
+            The database configuration for DeviceAlerts. 
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:MeterView.DeviceAlert.API.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:MeterView.DeviceAlert.API.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+    </members>
+</doc>
